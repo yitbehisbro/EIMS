@@ -1,0 +1,61 @@
+﻿@using System.Security.Claims;
+
+
+@if (User.Identity.IsAuthenticated)
+{
+	var uName = User.FindFirst(ClaimTypes.GivenName).Value;
+
+	<li class="nav-item nav-item-dropdown-xl dropdown">
+		<a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
+			<div class="status-indicator-container">
+                <img src="~/noimage.jpg" class="w-32px h-32px rounded-pill" alt="">
+				<span class="status-indicator bg-success"></span>
+			</div>
+			<span class="d-none d-md-inline-block mx-md-2">@uName</span>
+		</a>
+
+		<div class="dropdown-menu dropdown-menu-end">
+			<a asp-action="Index" asp-controller="Account" class="dropdown-item">
+				<i class="ph-user-circle me-2"></i>
+				My Profile
+			</a>
+			@*<a href="#" class="dropdown-item">
+				<i class="ph-currency-circle-dollar me-2"></i>
+				My subscription
+			</a>
+			<a href="#" class="dropdown-item">
+				<i class="ph-shopping-cart me-2"></i>
+				My orders
+			</a>
+			<a href="#" class="dropdown-item">
+				<i class="ph-envelope-open me-2"></i>
+				My inbox
+				<span class="badge bg-primary rounded-pill ms-auto">26</span>
+			</a>*@
+			<div class="dropdown-divider"></div>
+			<a asp-page="/Account/Manage/Index" class="dropdown-item">
+				<i class="ph-gear me-2"></i>
+				Account settings
+			</a>
+
+
+				<a  asp-action="Signout" asp-controller="Account" class="dropdown-item">
+					<i class="ph-sign-out me-2"></i>
+					Logout
+				</a>
+			
+
+
+
+		</div>
+	</li>
+}
+else
+{
+	
+	<li class="nav-item">
+		<a class="navbar-nav-link navbar-nav-link-icon rounded" asp-page="/Account/Login">
+			<i class="ph-sign-in mr-2"></i> Login
+		</a>
+	</li>
+}

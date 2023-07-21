@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <partial name="Includes/_head" />
+</head>
+<body>
+    <partial name="Components/_headerSide" />
+    <!-- Page content -->
+    <div class="page-content">
+		<div class="sidebar sidebar-light sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar content -->
+		<partial name="Components/_Sidebar" />
+			<!-- /sidebar content -->
+
+		</div>
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <!-- Inner content -->
+            <div class="content-inner">
+                <partial name="Components/_page_header" />
+                <!-- Content area -->
+                <div class="content container pt-3">
+                    <partial name="Components/_alerts" />
+                    @RenderBody()
+                </div>
+                <!-- /content area -->
+                <partial name="Components/_footer" />
+            </div>
+            <!-- /inner content -->
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+    @*<partial name="Components/_notifications" />*@
+    <partial name="Includes/_bottom" />
+    <script>
+        function setNavigation() {
+            var path = window.location.pathname;
+            console.log('current path:', path)
+            path = path.replace(/\/$/, "");
+            path = decodeURIComponent(path);
+
+            $(".nav-item a").each(function () {
+                var href = $(this).attr('href');               
+                if (href=='/' && path=='') {
+                    href = href.replace(/\/$/, "");
+                }
+
+                if (path.endsWith(href)) {
+                    $(this).addClass('active');
+                    $(this).parent().parent().addClass('collapse show');
+                    $(this).parent().parent().parent().addClass('nav-item-open');
+                }
+            });
+        }
+
+        $(function () {
+            setNavigation();
+        });
+
+        $(document).ajaxStart(function () {
+            $.blockUI({
+                message: '<i class="icon-spinner4 spinner"></i> Please Wait...',
+                overlayCSS: {
+                    backgroundColor: '#1b2024',
+                    opacity: 0.8,
+                    cursor: 'wait'
+                },
+                css: {
+                    border: 0,
+                    color: '#fff',
+                    padding: 0,
+                    backgroundColor: 'transparent'
+                }
+            });
+        }).ajaxComplete(function () {
+            $.unblockUI();
+        }).ajaxError(function () {
+            popError('Some error occured while sending your request');
+            $.unblockUI();
+        });
+
+        function popError(n) {
+            new PNotify({
+                title: 'Error!',
+                text: n,
+                addclass: 'alert alert-styled-left',
+                type: 'danger'
+            });
+        }
+        function popSuccess(n) {
+            new PNotify({
+                title: 'Success!',
+                text: n,
+                addclass: 'alert alert-styled-left',
+                type: 'success'
+            });
+        }
+        function popWarning(n) {
+            new PNotify({
+                title: 'Attention',
+                text: n,
+                addclass: 'alert alert-styled-left',
+                type: 'warning'
+            });
+        }
+    </script>
+
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

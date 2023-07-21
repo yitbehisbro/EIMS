@@ -1,0 +1,28 @@
+﻿@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Access Denied";
+}
+<div class="flex-fill">
+
+	<!-- Error title -->
+	<div class="text-center mb-4">
+		<img src="~/error_bg.svg" class="img-fluid mb-3" height="200" alt="">
+		@*<h1 class="display-3 fw-semibold lh-1 mb-3">403</h1>*@
+		<h6 class="w-md-25 mx-md-auto">
+			Access denied. <br>
+			You don't have sufficient previlege to access this resource.
+			If you have applied for membership, 
+			please contact the Edr manager in-person or call +251914939059.
+		</h6>
+	</div>
+	<!-- /error title -->
+	<!-- Error content -->
+	<div class="text-center">
+		<a asp-action="Index" asp-controller="Home" class="btn btn-primary">
+			<i class="ph-house me-2"></i>
+			Return to home
+		</a>
+	</div>
+	<!-- /error wrapper -->
+
+</div>

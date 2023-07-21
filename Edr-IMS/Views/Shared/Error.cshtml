@@ -1,0 +1,29 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+    Layout = "_Layout";
+}
+<div class="flex-fill">
+
+	<!-- Error title -->
+	<div class="text-center mb-4">
+		<h1 class="text-danger">Error.</h1>
+		<h2 class="text-danger">An error occurred while processing your request.</h2>
+		@if (Model.ShowRequestId)
+		{
+			<p>
+				<strong>Request ID:</strong> <code>@Model.RequestId</code>
+			</p>
+		}
+	</div>
+	<!-- /error title -->
+	<!-- Error content -->
+	<div class="text-center">
+		<a asp-action="Index" asp-controller="Home" class="btn btn-primary">
+			<i class="ph-house me-2"></i>
+			Return to home
+		</a>
+	</div>
+	<!-- /error wrapper -->
+
+</div>

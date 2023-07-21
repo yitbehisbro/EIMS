@@ -1,0 +1,123 @@
+﻿@model EdrIMS.Models.EdrEvent
+
+@{
+    ViewData["Title"] = @Model.EventType.Name + "'s detail information";
+}
+
+<div class="card border-start border-start-width-2 border-start-secondary border-end border-end-width-1 border-end-secondary rounded-0">
+    <div class="card-header d-flex align-items-center bg-light py-0">
+        <h6 class="py-3 mb-0"><i class="ph-bold ph-calendar-plus me-2"></i>@ViewData["Title"]</h6>
+        <div class="ms-auto my-auto">
+            <div class="hstack gap-2 mt-3 mt-sm-0">
+                @if (Model.IsPublished == true)
+                {
+                    @*<a class='badge bg-success' href='/EventParticipants/Block/@item?.Id'>Active</a>*@
+                    <a asp-action="Unpublish" asp-route-id="@Model?.Id" class="btn btn-danger w-100 w-sm-auto">
+                        <i class="ph-stop-circle me-2"></i>
+                        Unpublish
+                    </a>
+                }
+                else
+                {
+                    @*<a class='badge bg-danger' href='/EventParticipants/Activate/@item?.Id'>Blocked</a>*@
+                    <a asp-action="Publish" asp-route-id="@Model?.Id" class="btn btn-success w-100 w-sm-auto">
+                        <i class="ph-gas-pump me-2"></i>
+                        Publish
+                    </a>
+                }
+                
+                <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-indigo w-100 w-sm-auto">
+                    <i class="ph-note-pencil me-2"></i>
+                    Edit
+                </a>
+                <a asp-action="Index" class="btn btn-light w-100 w-sm-auto">
+                    <i class="ph-arrow-u-down-left me-2"></i>
+                    Back to List
+                </a>
+            </div>
+        </div>
+    </div>
+   <div class="card-body">
+       <div class="row mb-3">
+            <div class="col-sm">
+                <dl class="row">
+
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.EventType)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.EventType.Name)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.Description)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Description)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.EventWeight)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.EventWeight.Name)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.Location)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Location)
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-sm">
+                <dl class="row">
+
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.DateOfEvent)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Model.DateOfEvent.ToString("ddd, dd MMM yyyy hh:mm tt") @*/*To@Html.DisplayFor(model => model.DateOfEvent.ToString("ddd, dd MMM yyyy hh:mm tt"))*/*@
+                    </dd>
+
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.EventAttendanceMode)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.EventAttendanceMode.Name)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.IsActive)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.IsActive)
+                    </dd>
+
+                </dl>
+            </div>
+       </div>
+
+       <hr />
+        <div class="mb-3">
+            @{
+                @await Component.InvokeAsync("EventParticipants", new { edrEventId = Model.Id })
+            }
+        </div>
+        <hr />
+        <div class="modal fade" id="createEventParticipantsModal" tabindex="-1" aria-labelledby="createParticipantsModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header bg-secondary bg-opacity-75 text-white">
+                        <i class="ph-bold ph-folder-notch-plus ph-2x"></i>&nbsp;&nbsp;
+                        <h5 class="modal-title" id="createParticipantsModal">Add a new participant for <b>@Model?.EventType?.Name</b></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    @{
+                        @await Component.InvokeAsync("EventParticipantsCreate", new { edrEventId = Model.Id })
+
+                    }
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+

@@ -1,0 +1,146 @@
+﻿@model IEnumerable<EdrIMS.Models.Member>
+
+@{
+    ViewData["Title"] = "List of Member";
+}
+
+<div class="card border-start border-start-width-2 border-start-secondary border-end border-end-width-1 border-end-secondary rounded-0">
+    <div class="card-header d-flex align-items-center bg-light py-0">
+        <h6 class="py-3 mb-0">@ViewData["Title"]</h6>
+        <div class="ms-auto my-auto">
+            <a asp-action="Create" class="btn btn-outline-secondary btn-sm btn-labeled btn-labeled-start">
+                <span class="btn-labeled-icon bg-secondary text-white">
+                    <i class="ph-plus"></i>
+                </span>
+                Add New
+            </a>
+        </div>
+    </div>
+    <table class="table datatable-init no-footer">
+    <thead>
+        <tr>
+        <th>Id</th>
+            <th>
+                @Html.DisplayNameFor(model => model.FileNumber)
+            </th>
+            <th>
+                Members
+            </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Gender)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                @*<th>
+                    @Html.DisplayNameFor(model => model.SubCity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Kebele)
+                </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.PhoneNumber)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.PhotoUrl)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.IsAlive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+
+            <th class="p-0 text-center" style="width: 53px;">
+                   <i class="ph-dots-three"></i>
+            </th>
+        </tr>
+    </thead>
+</table>
+</div>
+@section Scripts {
+    <script src="~/js/vendor/tables/datatables/datatables.min.js"></script>
+    <script src="~/js/vendor/tables/datatables/extensions/buttons.min.js"></script>
+    <script src="~/js/datatableconf.js"></script>
+    <script> 
+        $('.datatable-init').DataTable({
+            buttons: {
+                dom: {
+                    button: {
+                        className: 'btn btn-light'
+                    }
+                },
+                buttons: [
+                    { extend: 'copy' },
+                    { extend: 'csv' },
+                    { extend: 'excel' },
+                    { extend: 'pdf' },
+                    { extend: 'print' }
+                ]
+            },
+            "processing": true,
+            "serverSide": true,
+            "filter": true,
+            "ajax": {
+                "url": '@Url.Action("GetMembers")',
+                "type": "POST",
+                "datatype": "json"
+            }, "columnDefs": [{
+                "targets": [0],
+                "visible": false,
+                "searchable": false
+            },
+            {
+                //Disables sortablity for the last three rows
+                "orderable": false,
+                "targets": [-1, -2, -3]
+            }],
+            "columns": [
+                    { "data": "id", "name": "Id", "autoWidth": true },
+                    { "data": "fileNumber", "name": "FileNumber", "autoWidth": true },
+                    { "data": "name", "name": "Name", "autoWidth": true },
+                { "data": "gender", "name": "Gender", "autoWidth": true },
+                { "data": "city", "name": "City", "autoWidth": true },
+                //{ "data": "subCity", "name": "SubCity", "autoWidth": true },
+                //{ "data": "kebele", "name": "Kebele", "autoWidth": true },
+                    //{ "data": "middleName", "name": "MiddleName", "autoWidth": true },
+                    //{ "data": "lastName", "name": "LastName", "autoWidth": true },
+                    //{ "data": "birthPlace", "name": "BirthPlace", "autoWidth": true },
+                    //{ "data": "dateOfBirth", "name": "DateOfBirth", "autoWidth": true },
+                    { "data": "phoneNumber", "name": "PhoneNumber", "autoWidth": true },
+                    //{ "data": "photoUrl", "name": "PhotoUrl", "autoWidth": true },
+                    //{ "data": "isAlive", "name": "IsAlive", "autoWidth": true },
+                    //{ "data": "isActive", "name": "IsActive", "autoWidth": true },
+                {
+                    "render": function (data, type, row, meta) {
+                        var retString = "<a class='badge bg-danger' href='/Members/Alive/" + row.id + "'>Deceased</a>";
+
+                        if (row.isAlive == true) {
+                            retString = "<a class='badge bg-success' href='/Members/Deceased/" + row.id + "'>Alive</a>";
+                        }
+                        return retString;
+                    }
+                },
+                {
+                    "render": function (data, type, row, meta) {
+                        var retString = "<a class='badge bg-danger' href='/Members/Activate/" + row.id + "'>Blocked</a>";
+
+                        if (row.isActive == true) {
+                            retString = "<a class='badge bg-success' href='/Members/Block/" + row.id + "'>Active</a>";
+                        }
+                        return retString;
+                    }
+                },
+                    //{ "data": "users", "name": "Users", "autoWidth": true },
+                {
+                    "render": function (data, type, row, meta) {
+                        return "<div class='d-inline-flex'><div class='dropdown'><a href='#' class='text-body' data-bs-toggle='dropdown' aria-expanded='false'><i class='ph-list'></i></a><div class='dropdown-menu dropdown-menu-end'><a href='Members/Details/" + row.id + "' class='dropdown-item'>" +
+                            "<i class='ph-article me-2'></i>View Detail</a><a href='Members/Edit/" + row.id + "' class='dropdown-item'>" +
+                            "<i class='ph-pencil me-2'></i>Edit</a><div class='dropdown-divider''></div><a href='Members/Delete/" + row.id + "' class='dropdown-item'>" +
+                            "<i class='ph-trash text-danger me-2'></i>Delete</a></div></div></div>";
+                    }
+                }
+            ]
+        });
+   </script>
+}

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <partial name="Includes/_head" />
+</head>
+<body>
+    <partial name="Components/_header" />
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+            <!-- Inner content -->
+            <div class="content-inner">
+                @*@Html.Partial("Components/_page_header")*@
+                <!-- Content area -->
+                <div class="content d-flex justify-content-center align-items-center">
+                    <partial name="Components/_alerts" />
+                    @RenderBody()
+                </div>
+                <!-- /content area -->
+                <partial name="Components/_footer" />
+            </div>
+            <!-- /inner content -->
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+    @*<partial name="Components/_notifications" />*@
+    <partial name="Includes/_bottom" />
+    <script>
+        function setNavigation() {
+            var path = window.location.pathname;
+            console.log('current path:', path)
+            path = path.replace(/\/$/, "");
+            path = decodeURIComponent(path);
+
+            $(".nav-item a").each(function () {
+                var href = $(this).attr('href');               
+                if (href=='/' && path=='') {
+                    href = href.replace(/\/$/, "");
+                }
+
+                if (path.endsWith(href)) {
+                    $(this).addClass('active');
+                }
+            });
+        }
+
+        $(function () {
+            setNavigation();
+        });
+    </script>
+	@await RenderSectionAsync("Scripts", required: false)
+  
+
+</body>
+</html>

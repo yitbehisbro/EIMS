@@ -1,0 +1,86 @@
+﻿@model EdrIMS.Models.RelativesRelation
+
+@{
+    ViewData["Title"] = "Relatives Relation Details";
+}
+
+<div class="card border-start border-start-width-2 border-start-secondary border-end border-end-width-1 border-end-secondary rounded-0">
+    <div class="card-header d-flex align-items-center bg-light py-0">
+        <h6 class="py-3 mb-0">@ViewData["Title"]</h6>
+        <div class="ms-auto my-auto">
+            <div class="hstack gap-2 mt-3 mt-sm-0">
+                <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-indigo w-100 w-sm-auto">
+                    <i class="ph-note-pencil me-2"></i>
+                    Edit
+                </a>
+                <a href="@Url.Action("Details", "Members", new { id = @Model?.MemberId })" class="btn btn-light w-100 w-sm-auto">
+                    <i class="ph-arrow-u-down-left me-2"></i>
+                    Back to List
+                </a>
+            </div>
+        </div>
+    </div>
+   <div class="card-body">
+
+       <div class="row">
+           <div class="col-sm">
+               <dl class="row">
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.RelationType)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.RelationType.Name)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        Members' Name
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Member.FirstName)
+                        @Html.DisplayFor(model => model.Member.MiddleName)
+                        @Html.DisplayFor(model => model.Member.LastName)
+                    </dd>
+                </dl>
+           </div>
+           <div class="col-sm">
+               <dl class="row">
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.Member.Gender)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Member.Gender.Name)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.IsActive)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.IsActive)
+                    </dd>
+                </dl>
+           </div>
+       </div>
+       <hr />
+        <div class="mb-3">
+            @{
+                @await Component.InvokeAsync("MembersRelatives", new { relativeRelationId = Model.Id })
+            }
+        </div>
+        <hr />
+        <div class="modal fade" id="createMembersRelativesModal" tabindex="-1" aria-labelledby="createRelativesModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header bg-secondary bg-opacity-75 text-white">
+                        <i class="ph-bold ph-folder-notch-plus ph-2x"></i>&nbsp;&nbsp;
+                        <h5 class="modal-title" id="createRelativesModal">Add a new relative for <b>@Model?.Member?.FirstName @Model?.Member?.MiddleName</b></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    @{
+                        @await Component.InvokeAsync("MembersRelativesCreate", new { relativeRelationId = Model.Id })
+
+                    }
+                </div>
+            </div>
+        </div>
+</div>
+
+</div>

@@ -1,0 +1,50 @@
+﻿@model EdrIMS.Models.RelationType
+
+@{
+    ViewData["Title"] = "Delete - RelationType";
+}
+
+<div class="alert alert-danger">
+    <span class="fw-semibold">Deleting!</span> Are you sure you want to delete this?
+    <i class="ph-x-circle float-end ms-2"></i>
+</div>
+
+<div class="card border-start border-start-width-2 border-start-secondary border-end border-end-width-1 border-end-secondary rounded-0">
+    <div class="card-header d-flex align-items-center bg-light py-0">
+        <h6 class="py-3 mb-0">@ViewData["Title"]</h6>
+        <div class="ms-auto my-auto">
+            
+        </div>
+    </div>
+    <div class="card-body">
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+    </dl>
+    </div>
+ <div class="card-footer pt-2 pb-2">
+    <div class="hstack gap-2 mt-3 mt-sm-0">
+       <form asp-action="Delete">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" value="Delete" class="btn btn-danger w-100 w-sm-auto">
+                <i class="ph-x me-2"></i>
+                Delete
+            </button>
+            <a asp-action="Index" class="btn btn-light w-100 w-sm-auto">
+                <i class="ph-arrow-u-down-left me-2"></i>
+                Back to List
+            </a>
+        </form>
+    </div>
+</div>
+</div>

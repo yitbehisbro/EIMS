@@ -1,0 +1,805 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = EdrIMS
+build_property.RootNamespace = EdrIMS
+build_property.ProjectDir = C:\Users\GETCH\source\repos\Edr-IMS\Edr-IMS\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\GETCH\source\repos\Edr-IMS\Edr-IMS
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ControllerGenerator/ApiControllerWithActions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXENvbnRyb2xsZXJHZW5lcmF0b3JcQXBpQ29udHJvbGxlcldpdGhBY3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ControllerGenerator/ApiControllerWithContext.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXENvbnRyb2xsZXJHZW5lcmF0b3JcQXBpQ29udHJvbGxlcldpdGhDb250ZXh0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ControllerGenerator/ApiEmptyController.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXENvbnRyb2xsZXJHZW5lcmF0b3JcQXBpRW1wdHlDb250cm9sbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ControllerGenerator/ControllerWithActions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXENvbnRyb2xsZXJHZW5lcmF0b3JcQ29udHJvbGxlcldpdGhBY3Rpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ControllerGenerator/EmptyController.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXENvbnRyb2xsZXJHZW5lcmF0b3JcRW1wdHlDb250cm9sbGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ControllerGenerator/MvcControllerWithContext.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXENvbnRyb2xsZXJHZW5lcmF0b3JcTXZjQ29udHJvbGxlcldpdGhDb250ZXh0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ViewGenerator/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXFZpZXdHZW5lcmF0b3JcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ViewGenerator/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXFZpZXdHZW5lcmF0b3JcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ViewGenerator/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXFZpZXdHZW5lcmF0b3JcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ViewGenerator/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXFZpZXdHZW5lcmF0b3JcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ViewGenerator/Empty.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXFZpZXdHZW5lcmF0b3JcRW1wdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ViewGenerator/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXFZpZXdHZW5lcmF0b3JcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Templates/ViewGenerator/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = VGVtcGxhdGVzXFZpZXdHZW5lcmF0b3JcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Account/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Account/NotActivated.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxOb3RBY3RpdmF0ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Cities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Cities/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Cities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Cities/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Cities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Currencies/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY2llc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Currencies/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY2llc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Currencies/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY2llc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Currencies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY2llc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Currencies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VycmVuY2llc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembersRelatives/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzUmVsYXRpdmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembersRelatives/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzUmVsYXRpdmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembersRelatives/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzUmVsYXRpdmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembersRelatives/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzUmVsYXRpdmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembersRelatives/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzUmVsYXRpdmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/DeceasedMembers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjZWFzZWRNZW1iZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EdrEvents/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRyRXZlbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EdrEvents/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRyRXZlbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EdrEvents/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRyRXZlbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EdrEvents/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRyRXZlbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EdrEvents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWRyRXZlbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventAttendanceModes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRBdHRlbmRhbmNlTW9kZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventAttendanceModes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRBdHRlbmRhbmNlTW9kZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventAttendanceModes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRBdHRlbmRhbmNlTW9kZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventAttendanceModes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRBdHRlbmRhbmNlTW9kZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventAttendanceModes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRBdHRlbmRhbmNlTW9kZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventParticipants/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRQYXJ0aWNpcGFudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventParticipants/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRQYXJ0aWNpcGFudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventParticipants/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRQYXJ0aWNpcGFudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventParticipants/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRQYXJ0aWNpcGFudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventParticipants/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRQYXJ0aWNpcGFudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRUeXBlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventWeights/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRXZWlnaHRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventWeights/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRXZWlnaHRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventWeights/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRXZWlnaHRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventWeights/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRXZWlnaHRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/EventWeights/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRXZWlnaHRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Genders/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Genders/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Genders/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Genders/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Genders/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VuZGVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Kebeles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2ViZWxlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Kebeles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2ViZWxlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Kebeles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2ViZWxlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Kebeles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2ViZWxlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Kebeles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2ViZWxlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesMonths/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNNb250aHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesMonths/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNNb250aHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesMonths/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNNb250aHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesMonths/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNNb250aHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesMonths/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNNb250aHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesPayments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNQYXltZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesPayments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNQYXltZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesPayments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNQYXltZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesPayments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNQYXltZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesPayments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNQYXltZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNUeXBlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNUeXBlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNUeXBlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNUeXBlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNUeXBlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesYears/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNZZWFyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesYears/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNZZWFyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesYears/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNZZWFyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesYears/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNZZWFyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDuesYears/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNZZWFyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDues/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDues/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDues/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDues/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembershipDues/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc2hpcER1ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembersRelatives/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1JlbGF0aXZlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembersRelatives/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1JlbGF0aXZlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembersRelatives/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1JlbGF0aXZlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembersRelatives/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1JlbGF0aXZlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MembersRelatives/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1JlbGF0aXZlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Members/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Members/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Members/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Members/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Members/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuCategories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNhdGVnb3JpZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuCategories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNhdGVnb3JpZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuCategories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNhdGVnb3JpZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuCategories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNhdGVnb3JpZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuCategories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNhdGVnb3JpZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Menus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Menus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Menus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Menus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Menus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVR5cGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVR5cGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVR5cGVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVR5cGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/MenuTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVR5cGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Regions/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Regions/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Regions/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Regions/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Regions/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelationTypes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpb25UeXBlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelationTypes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpb25UeXBlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelationTypes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpb25UeXBlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelationTypes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpb25UeXBlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelationTypes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpb25UeXBlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelativesRelations/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpdmVzUmVsYXRpb25zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelativesRelations/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpdmVzUmVsYXRpb25zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelativesRelations/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpdmVzUmVsYXRpb25zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelativesRelations/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpdmVzUmVsYXRpb25zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RelativesRelations/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVsYXRpdmVzUmVsYXRpb25zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RolesMenus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNNZW51c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RolesMenus/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNNZW51c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RolesMenus/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNNZW51c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RolesMenus/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNNZW51c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/RolesMenus/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNNZW51c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Roles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Roles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Roles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Roles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Roles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/ActiveEventCount/Redirect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWN0aXZlRXZlbnRDb3VudFxSZWRpcmVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/ActiveEventCount/_ActiveEventCount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWN0aXZlRXZlbnRDb3VudFxfQWN0aXZlRXZlbnRDb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/EventParticipantsCreate/_EventParticipantsCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRXZlbnRQYXJ0aWNpcGFudHNDcmVhdGVcX0V2ZW50UGFydGljaXBhbnRzQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/EventParticipantsDelete/_EventParticipantsDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRXZlbnRQYXJ0aWNpcGFudHNEZWxldGVcX0V2ZW50UGFydGljaXBhbnRzRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/EventParticipantsEdit/_EventParticipantsEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRXZlbnRQYXJ0aWNpcGFudHNFZGl0XF9FdmVudFBhcnRpY2lwYW50c0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/EventParticipants/_EventParticipants.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRXZlbnRQYXJ0aWNpcGFudHNcX0V2ZW50UGFydGljaXBhbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/InactiveUsersCount/_InactiveUsersCount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSW5hY3RpdmVVc2Vyc0NvdW50XF9JbmFjdGl2ZVVzZXJzQ291bnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/MembersRelativesCreate/_MembersRelativesCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVtYmVyc1JlbGF0aXZlc0NyZWF0ZVxfTWVtYmVyc1JlbGF0aXZlc0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/MembersRelativesDelete/_MembersRelativesDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVtYmVyc1JlbGF0aXZlc0RlbGV0ZVxfTWVtYmVyc1JlbGF0aXZlc0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/MembersRelativesEdit/_MembersRelativesEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVtYmVyc1JlbGF0aXZlc0VkaXRcX01lbWJlcnNSZWxhdGl2ZXNFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/MembersRelatives/_MembersRelatives.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVtYmVyc1JlbGF0aXZlc1xfTWVtYmVyc1JlbGF0aXZlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/RelativesRelationsCreate/_RelativesRelationsCreate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVsYXRpdmVzUmVsYXRpb25zQ3JlYXRlXF9SZWxhdGl2ZXNSZWxhdGlvbnNDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/RelativesRelationsDelete/_RelativesRelationsDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVsYXRpdmVzUmVsYXRpb25zRGVsZXRlXF9SZWxhdGl2ZXNSZWxhdGlvbnNEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/RelativesRelationsEdit/_RelativesRelationsEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVsYXRpdmVzUmVsYXRpb25zRWRpdFxfUmVsYXRpdmVzUmVsYXRpb25zRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/RelativesRelations/_RelativesRelations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVsYXRpdmVzUmVsYXRpb25zXF9SZWxhdGl2ZXNSZWxhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/_alerts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX2FsZXJ0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/_footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX2Zvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/_header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX2hlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/_headerSide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX2hlYWRlclNpZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/_notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX25vdGlmaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/_page_header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX3BhZ2VfaGVhZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Components/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NpZGViYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Includes/_bottom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluY2x1ZGVzXF9ib3R0b20uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Includes/_head.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEluY2x1ZGVzXF9oZWFkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Menus/_front_menus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1lbnVzXF9mcm9udF9tZW51cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/Menus/_user_menus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1lbnVzXF91c2VyX21lbnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/_LayoutUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/SubCities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2l0aWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/SubCities/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2l0aWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/SubCities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2l0aWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/SubCities/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2l0aWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/SubCities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViQ2l0aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Zones/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9uZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Zones/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9uZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Zones/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9uZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Zones/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9uZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Zones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcWm9uZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/GETCH/source/repos/Edr-IMS/Edr-IMS/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gql06yz0k5

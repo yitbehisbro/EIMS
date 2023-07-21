@@ -1,0 +1,155 @@
+﻿@model EdrIMS.Models.Member
+
+@{
+    ViewData["Title"] = Model.FirstName + " " + Model.MiddleName + " " + Model.LastName + "'s details";
+}
+
+<div class="card border-start border-start-width-2 border-start-secondary border-end border-end-width-1 border-end-secondary rounded-0">
+    <div class="card-header d-flex align-items-center bg-light py-0">
+        <h6 class="py-3 mb-0">@ViewData["Title"]</h6>
+        <div class="ms-auto my-auto">
+            <div class="hstack gap-2 mt-3 mt-sm-0">
+                <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-indigo w-100 w-sm-auto">
+                    <i class="ph-note-pencil me-2"></i>
+                    Edit
+                </a>
+                <a asp-action="Index" class="btn btn-light w-100 w-sm-auto">
+                    <i class="ph-arrow-u-down-left me-2"></i>
+                    Back to List
+                </a>
+            </div>
+        </div>
+    </div>
+   <div class="card-body">
+       <div class="row">
+           <div class="col-sm">
+               <dl class="row">
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.FileNumber)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.FileNumber)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.FirstName)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.FirstName)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.MiddleName)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.MiddleName)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.LastName)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.LastName)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.Gender)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Gender.Name)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.BirthPlace)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.BirthPlace)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.DateOfBirth)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Model?.DateOfBirth.ToString("ddd, dd MMM yyyy hh:mm tt")
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.PhoneNumber)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.PhoneNumber)
+                    </dd>
+                </dl>
+           </div>
+           <div class="col-sm">
+                <dl class="row">
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.PhotoUrl)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.PhotoUrl)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.DateOfRegistration)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Model?.DateOfRegistration?.ToString("ddd, dd MMM yyyy hh:mm tt")
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.City)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.City.Name)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.Kebele)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.Kebele.Name)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.RegisteredBy)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.RegisteredByNavigation.Name) @Html.DisplayFor(model => model.RegisteredByNavigation.FatherName)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.SubCity)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.SubCity.Name)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.IsActive)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.IsActive)
+                    </dd>
+                    <dt class="col-sm-4 text-end">
+                        @Html.DisplayNameFor(model => model.IsAlive)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.IsAlive)
+                    </dd>
+                </dl>
+            </div>
+       </div>
+        <hr />
+        <div class="mb-3">
+            @{
+                @await Component.InvokeAsync("RelativesRelations", new { memberId = Model.Id })
+            }
+        </div>
+        <hr />
+        <div class="modal fade" id="createRelativesRelationsModal" tabindex="-1" aria-labelledby="createRelationsModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header bg-secondary bg-opacity-75 text-white">
+                        <i class="ph-bold ph-folder-notch-plus ph-2x"></i>&nbsp;&nbsp;
+                        <h5 class="modal-title" id="createRelationsModal">Add a new relation for <b>@Model?.FirstName @Model?.MiddleName</b></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    @{
+                        @await Component.InvokeAsync("RelativesRelationsCreate", new { memberId = Model.Id })
+
+                    }
+                </div>
+            </div>
+        </div>
+</div>
+<hr />
+</div>

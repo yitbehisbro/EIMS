@@ -1,0 +1,28 @@
+﻿
+@*<partial name="_LoginPartial" />*@
+<!-- /main navbar -->
+<div class="navbar navbar-dark bg-secondary navbar-expand-xl pt-1 pb-1 navbar-static shadow">
+		<div class="container-fluid">
+			<div class="navbar-brand flex-1">
+				<a asp-action="index" asp-controller="Home" class="d-inline-flex align-items-center">
+					<img src="~/logo_light.png" alt="">
+				</a>
+			</div>
+
+		@*<partial name="../Menus/_front_menus.cshtml" />*@
+
+			<ul class="nav gap-1 flex-xl-1 justify-content-end order-0 order-xl-1">
+				
+				@*<li class="nav-item">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon rounded-pill" data-bs-toggle="offcanvas" data-bs-target="#notifications">
+						<i class="ph-bell"></i>
+						<span class="badge bg-yellow text-black position-absolute top-0 end-0 translate-middle-top zindex-1 rounded-pill mt-1 me-1">2</span>
+					</a>
+				</li>*@
+
+				<partial name="../_loginPartial.cshtml" />
+
+				
+			</ul>
+		</div>
+	</div>

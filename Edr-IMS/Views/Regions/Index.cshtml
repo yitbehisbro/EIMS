@@ -1,0 +1,83 @@
+﻿@model IEnumerable<EdrIMS.Models.Region>
+
+@{
+    ViewData["Title"] = "List of Region";
+}
+
+<div class="card border-start border-start-width-2 border-start-secondary border-end border-end-width-1 border-end-secondary rounded-0">
+    <div class="card-header d-flex align-items-center bg-light py-0">
+        <h6 class="py-3 mb-0">@ViewData["Title"]</h6>
+        <div class="ms-auto my-auto">
+            <a asp-action="Create" class="btn btn-outline-secondary btn-sm btn-labeled btn-labeled-start">
+                <span class="btn-labeled-icon bg-secondary text-white">
+                    <i class="ph-plus"></i>
+                </span>
+                Add New
+            </a>
+        </div>
+    </div>
+    <table class="table datatable-init no-footer">
+    <thead>
+        <tr>
+        <th>Id</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            <th class="p-0" style="width: 53px;">
+                   <i class="ph-dots-three"></i>
+            </th>
+        </tr>
+    </thead>
+</table>
+</div>
+@section Scripts {
+    <script src="~/js/vendor/tables/datatables/datatables.min.js"></script>
+    <script src="~/js/vendor/tables/datatables/extensions/buttons.min.js"></script>
+    <script src="~/js/datatableconf.js"></script>
+    <script> 
+        $('.datatable-init').DataTable({
+            buttons: {
+                dom: {
+                    button: {
+                        className: 'btn btn-light'
+                    }
+                },
+                buttons: [
+                    { extend: 'copy' },
+                    { extend: 'csv' },
+                    { extend: 'excel' },
+                    { extend: 'pdf' },
+                    { extend: 'print' }
+                ]
+            },
+            "processing": true,
+            "serverSide": true,
+            "filter": true,
+            "ajax": {
+                "url": '@Url.Action("GetRegions")',
+                "type": "POST",
+                "datatype": "json"
+            }, "columnDefs": [{
+                "targets": [0],
+                "visible": false,
+                "searchable": false
+            }],
+            "columns": [
+                    { "data": "id", "name": "Id", "autoWidth": true },
+                    { "data": "name", "name": "Name", "autoWidth": true },
+                    { "data": "isActive", "name": "IsActive", "autoWidth": true },
+                {
+                    "render": function (data, type, row, meta) {
+                        return "<div class='d-inline-flex'><div class='dropdown'><a href='#' class='text-body' data-bs-toggle='dropdown' aria-expanded='false'><i class='ph-list'></i></a><div class='dropdown-menu dropdown-menu-end'><a href='Regions/Details/" + row.id + "' class='dropdown-item'>" +
+                            "<i class='ph-article me-2'></i>View Detail</a><a href='Regions/Edit/" + row.id + "' class='dropdown-item'>" +
+                            "<i class='ph-pencil me-2'></i>Edit</a><div class='dropdown-divider''></div><a href='Regions/Delete/" + row.id + "' class='dropdown-item'>" +
+                            "<i class='ph-trash text-danger me-2'></i>Delete</a></div></div></div>";
+                    }
+                }
+            ]
+        });
+   </script>
+}

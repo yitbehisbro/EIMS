@@ -1,0 +1,24 @@
+﻿@{
+	Layout = "_Layout";
+	ViewData["Title"] = "Access Denied";
+}
+<div class="flex-fill">
+
+	<!-- Error title -->
+	<div class="text-center mb-4">
+		<img src="~/error_bg.svg" class="img-fluid mb-3" height="200" alt="">
+		@*<h1 class="display-3 fw-semibold lh-1 mb-3">403</h1>*@
+		<h6 class="w-md-25 mx-md-auto">Account not activated. <br> 
+			If you're self registered, please contact the system administrator.</h6>
+	</div>
+	<!-- /error title -->
+	<!-- Error content -->
+	<div class="text-center">
+		<a asp-action="Signout" asp-controller="Account" class="btn btn-primary">
+			<i class="ph-house me-2"></i>
+			Return to home
+		</a>
+	</div>
+	<!-- /error wrapper -->
+
+</div>

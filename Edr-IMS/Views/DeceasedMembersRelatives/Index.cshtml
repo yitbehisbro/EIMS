@@ -1,0 +1,126 @@
+﻿@model IEnumerable<EdrIMS.Models.DeceasedMembersRelative>
+
+@{
+    ViewData["Title"] = "List of DeceasedMembersRelative";
+}
+
+<div class="card border-start border-start-width-2 border-start-secondary border-end border-end-width-1 border-end-secondary rounded-0">
+    <div class="card-header d-flex align-items-center bg-light py-0">
+        <h6 class="py-3 mb-0">@ViewData["Title"]</h6>
+        <div class="ms-auto my-auto">
+            <a asp-action="Create" class="btn btn-outline-secondary btn-sm btn-labeled btn-labeled-start">
+                <span class="btn-labeled-icon bg-secondary text-white">
+                    <i class="ph-plus"></i>
+                </span>
+                Add New
+            </a>
+        </div>
+    </div>
+    <table class="table datatable-init no-footer">
+    <thead>
+        <tr>
+        <th>Id</th>
+                <th >
+                    @Html.DisplayNameFor(model => model.MembersRelative)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Died)
+            </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CauseOfDeath)
+                </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Buried)
+            </th>*@
+            
+            <th>
+                @Html.DisplayNameFor(model => model.RestingPlace)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.LegalDocuments)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.IsInclusive)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsActive)
+            </th>
+            
+            <th class="p-0 text-center" style="width: 53px;">
+                   <i class="ph-dots-three"></i>
+            </th>
+        </tr>
+    </thead>
+</table>
+</div>
+@section Scripts {
+    <script src="~/js/vendor/tables/datatables/datatables.min.js"></script>
+    <script src="~/js/vendor/tables/datatables/extensions/buttons.min.js"></script>
+    <script src="~/js/datatableconf.js"></script>
+    <script> 
+        $('.datatable-init').DataTable({
+            buttons: {
+                dom: {
+                    button: {
+                        className: 'btn btn-light'
+                    }
+                },
+                buttons: [
+                    { extend: 'copy' },
+                    { extend: 'csv' },
+                    { extend: 'excel' },
+                    { extend: 'pdf' },
+                    { extend: 'print' }
+                ]
+            },
+            "processing": true,
+            "serverSide": true,
+            "filter": true,
+            "ajax": {
+                "url": '@Url.Action("GetDeceasedMembersRelatives")',
+                "type": "POST",
+                "datatype": "json"
+            }, "columnDefs": [{
+                "targets": [0],
+                "visible": false,
+                "searchable": false
+            },
+                {//Disables sortablity for the last three rows
+                    "orderable": false,
+                    "targets": -1
+                }],
+            "columns": [
+                    { "data": "id", "name": "Id", "autoWidth": true },
+                //{ "data": "membersRelative", "name": "MembersRelative", "autoWidth": true },
+                {
+                    "render": function (data, type, row, meta) {
+                        return "<a href='/MembersRelatives/Details/" + row.memberRelativeId + "'>" + row.membersRelative + "<sub class='badge bg-danger bg-opacity-75'>" + row.relativesRelation + "</sub> </a>";
+                    }
+                },
+                            { "data": "died", "name": "Died", "autoWidth": true },
+                { "data": "causeOfDeath", "name": "CauseOfDeath", "autoWidth": true },
+                            //{ "data": "buried", "name": "Buried", "autoWidth": true },
+                            { "data": "restingPlace", "name": "RestingPlace", "autoWidth": true },
+                            //{ "data": "legalDocuments", "name": "LegalDocuments", "autoWidth": true },
+                    {
+                        "render": function (data, type, row, meta) {
+                            return row.isInclusive ? "<a class='badge bg-success' href='/DeceasedMembersRelatives/NotInclusive/" + row.id + "'>Included</a>" : "<a class='badge bg-warning' href='/DeceasedMembersRelatives/Inclusive/" + row.id + "'>Ignored</a>";
+                        }
+                    },
+                    {
+                        "render": function (data, type, row, meta) {
+                            return row.isActive ? "<a class='badge bg-success' href='/DeceasedMembersRelatives/Block/" + row.id + "'>Active</a>" : "<a class='badge bg-warning' href='/DeceasedMembersRelatives/Activate/" + row.id + "'>Blocked</a>";
+                        }
+                    },
+                {
+                    "render": function (data, type, row, meta) {
+                        return "<div class='d-inline-flex'><div class='dropdown'><a href='#' class='text-body' data-bs-toggle='dropdown' aria-expanded='false'><i class='ph-list'></i></a><div class='dropdown-menu dropdown-menu-end'><a href='DeceasedMembersRelatives/Details/" + row.id + "' class='dropdown-item'>" +
+                            "<i class='ph-article me-2'></i>View Detail</a><a href='DeceasedMembersRelatives/Edit/" + row.id + "' class='dropdown-item'>" +
+                            "<i class='ph-pencil me-2'></i>Edit</a><div class='dropdown-divider''></div><a href='DeceasedMembersRelatives/Delete/" + row.id + "' class='dropdown-item'>" +
+                            "<i class='ph-trash text-danger me-2'></i>Delete</a></div></div></div>";
+                    }
+                }
+            ]
+        });
+   </script>
+}

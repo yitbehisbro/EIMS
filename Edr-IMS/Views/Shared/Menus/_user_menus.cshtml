@@ -1,0 +1,36 @@
+﻿@using EdrIMS.Services;
+@using EdrIMS.Helpers;
+@using Microsoft.AspNetCore.Http;
+
+@inject IHttpContextAccessor Accessor
+<li class="nav-item-header">
+	<div class="text-uppercase fs-sm lh-sm opacity-50 sidebar-resize-hide">Navigate from Here</div>
+	<i class="ph-dots-three sidebar-resize-show"></i>
+</li>
+<li class="nav-item">
+	<a asp-action="index" asp-controller="Home" class="nav-link text-dark">
+		<i class="ph-house"></i>
+		<span>
+			Dashboard
+			<span class="d-block fw-normal opacity-50">See the details</span>
+		</span>
+	</a>
+</li>
+@if (Accessor.HttpContext.Session.GetComplexData<List<DisplayMenus>>("menus") != null)
+{
+	foreach (var category in Accessor.HttpContext.Session.GetComplexData<List<CategoryDisplay>>("menuCategories"))
+	{
+		<li class="nav-item nav-item-submenu">
+			<a href="#" class="nav-link">
+				<i class="@category.Icon"></i>
+				<span>@category.Name</span>
+			</a>
+			<ul class="nav-group-sub collapse">
+				@foreach (var menu in Accessor.HttpContext.Session.GetComplexData<List<DisplayMenus>>("menus").Where(x=>x.MenuCategoryId==category.Id))
+				{
+					<li class="nav-item"><a asp-action="@menu.Action" asp-controller="@menu.Controller" class="nav-link text-dark"><i class="icon-circle-small me-1"></i> @menu.Title</a></li>
+				}
+			</ul>
+		</li>
+	}
+}
